@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: podinfo
+  namespace: flux-monitoring
+spec:
+  interval: 30m
+  ref:
+    branch: main
+  url: https://github.com/fluxcd/flux2
